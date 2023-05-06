@@ -26,12 +26,13 @@ II. ML Modelling
 
 Before we start building a model for prediction. Let's first find the features which are highly correlated with Popularity feature and use them as feature variables that we will trained in the model. Next will be performing Feature Transformations. The steps followed are
 
-Object data of the artists with some numerical indicator that identify the artist.
-Eliminate Zero values from tempo columns and replace it
-Standardizing Instrumental Criteria with numeric values
-Using OneHotEncoder from SKlearn to create dummies
-Minmax Scaling for relevant features
-Target Scaling for Popularity Column
+      Object data of the artists with some numerical indicator that identify the artist.
+      Eliminate Zero values from tempo columns and replace it
+      Standardizing Instrumental Criteria with numeric values
+      Using OneHotEncoder from SKlearn to create dummies
+      Minmax Scaling for relevant features
+      Target Scaling for Popularity Column
+      
 Below are a few models which I have attempted:
 
 Decision Tree Regressor
@@ -63,6 +64,8 @@ Results are as follows:
 The Mean Absolute Error and r2 score obtained from a test run using Decision Tree Regressor are 0.0792 and 74.896% respectively
 The Mean Absolute Error and r2 score obtained from a test run using Decision Tree Regressor with Grid Search CV are 0.073 and 76.6% respectively
 The Mean Absolute Error and r2 score obtained from a test run using Random Forest Regressor are 0.0758 and 74.683% respectively
+
+
 The Best Accuracy is achieved using Decision Tree Regressor with Grid Search CV model
 
 
